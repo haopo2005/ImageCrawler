@@ -36,8 +36,8 @@ def get_realimg(url):
 		img_desc =  desc.p.string
 	except AttributeError: 
 		print '叼毛网站不规范'
-	finally:
 		img_desc = None
+		
 	img_list = []
 	for img_url in url:
 		cur_img_url = base_url + img_url.a['href']
